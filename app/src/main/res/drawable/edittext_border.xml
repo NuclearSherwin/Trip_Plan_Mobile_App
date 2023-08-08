@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- Background color of the EditText -->
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- Replace "#FFFFFF" with your desired background color -->
+        </shape>
+    </item>
+    <item android:top="1dp" android:left="1dp" android:right="1dp" android:bottom="1dp">
+        <!-- Border color and width of the EditText -->
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="3dp"
+            android:color="#2196F3"
+            />
+        </shape>
+    </item>
+</layer-list>
