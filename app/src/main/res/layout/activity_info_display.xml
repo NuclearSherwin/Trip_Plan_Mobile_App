@@ -8,8 +8,9 @@
     tools:context=".InfoDisplay">
 
     <View
+        android:id="@+id/view2"
         android:layout_width="250dp"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:background="#FBFBFB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,5 +83,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="210dp"
+        android:text="Close"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

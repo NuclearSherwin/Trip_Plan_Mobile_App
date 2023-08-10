@@ -2,7 +2,9 @@ package com.example.tripplanapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.icu.text.IDNA;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -96,6 +98,17 @@ public class InfoDisplay extends AppCompatActivity {
         }
 
 
+        // Close action to navigate back to the main activity
+        TextView closeButton = findViewById(R.id.closeButton);
+        closeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // navigate back to main activity
+                Intent intent = new Intent(InfoDisplay.this, MainActivity.class);
+                startActivity(intent);
+                finish(); // close the activity if needed
+            }
+        });
 
     }
 }

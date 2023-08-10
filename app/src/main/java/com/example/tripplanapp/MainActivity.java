@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
+import androidx.viewpager.widget.ViewPager;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -19,6 +20,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.time.LocalDate;
@@ -121,33 +123,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
     }
 
-//    private void showDatePickerDialog(final TextInputEditText editTextDatePicker) {
-//        // Use the current date as the default date in the date picker
-//        final Calendar c = Calendar.getInstance();
-//        int year = c.get(Calendar.YEAR);
-//        int month = c.get(Calendar.MONTH);
-//        int day = c.get(Calendar.DAY_OF_MONTH);
-//
-//        DatePickerDialog datePickerDialog = new DatePickerDialog(
-//                this,
-//                new DatePickerDialog.OnDateSetListener() {
-//                    @Override
-//                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-//                        // Set the selected date to the TextInputEditText
-//                        String selectedDate = dayOfMonth + "/" + (month + 1) + "/" + year;
-//                        editTextDatePicker.setText(selectedDate);
-//                    }
-//                },
-//                year, month, day);
-//
-//        datePickerDialog.show();
-//    }
 
 }
 
